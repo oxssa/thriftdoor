@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Order;
+use App\Mail\OrderPaid;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class OrderController extends Controller
 {
@@ -95,7 +97,8 @@ class OrderController extends Controller
 
         //empty cart
         \Cart::session(auth()->id())->clear();
-
+        //send mail
+        Mail::to($order->user->email)->send(new OrderPaid($order));
         return redirect()->route('home')->withMessage('Pembelian Berhasil!');
     }
 
