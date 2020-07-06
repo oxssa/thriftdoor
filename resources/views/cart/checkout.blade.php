@@ -42,7 +42,7 @@
 
 
     <h2>Pembayaran</h2>
-{{--
+
     <div class="form-check">
         <label class="form-check-label">
             <input type="radio" class="form-check-input" name="payment_method" id="" value="cash_on_delivery">
@@ -59,7 +59,7 @@
 
         </label>
 
-    </div> --}}
+    </div>
 
 
     <button type="submit" class="btn btn-danger mt-4 btn-lg">Order</button>
