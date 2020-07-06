@@ -31,7 +31,7 @@
 
         <h3>Total : Rp {{\Cart::session(auth()->id())->getTotal()}}</h3><br>
         <div class="col-4">
-            <a href="#" class="btn btn-danger btn-lg" role="button">Beli</a>
+            <a href="{{route('cart.checkout')}}" class="btn btn-danger btn-lg" role="button">Beli</a>
         </div>
 
 @endsection
