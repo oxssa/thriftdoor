@@ -14,7 +14,7 @@
                     <p class="card-text">Rp {{$product->price}}</p>
                 </div>
                 <div class="card-body">
-                    <a href="#"  class="btn btn-danger" role="button"> + Keranjang</a>
+                    <a href="{{route('cart.add', $product->id)}}"  class="btn btn-danger" role="button"> + Keranjang</a>
                 </div>
             </div>
         </div>

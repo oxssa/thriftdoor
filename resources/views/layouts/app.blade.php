@@ -15,7 +15,7 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
@@ -38,6 +38,18 @@
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link p-0 m-0" href="{{ route('cart.index') }}">
+                                <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+
+                                <div class="badge badge-danger">
+                                    @auth
+                                    {{Cart::session(auth()->id())->getContent()->count()}}
+                                    @endauth
+                                </div>
+                            </a>
+                        </li>
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
@@ -72,7 +84,7 @@
             </div>
         </nav>
 
-        <main class="py-4">
+        <main class="py-4 container">
             @yield('content')
         </main>
     </div>
