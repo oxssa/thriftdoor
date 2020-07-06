@@ -2,14 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Order;
 use Darryldecode\Cart\Cart;
 use Illuminate\Http\Request;
 use Srmklive\PayPal\Services\ExpressCheckout;
 
 class PayPalController extends Controller
 {
-    public function getExpressCheckout(){
-        $checkoutData = $this->checkoutData();
+    public function getExpressCheckout($orderId){
+        $checkoutData = $this->checkoutData($orderId);
         $provider = new ExpressCheckout();
         $response = $provider->setExpressCheckout($checkoutData);
 
@@ -17,7 +18,7 @@ class PayPalController extends Controller
     }
 
 
-    private function checkoutData()
+    private function checkoutData($orderId)
     {
         $cart = \Cart::session(auth()->id());
 
@@ -31,7 +32,7 @@ class PayPalController extends Controller
 
         $checkoutData = [
             'items' => $cartItems,
-            'return_url' => route('paypal.success'),
+            'return_url' => route('paypal.success', $orderId),
             'cancel_url' => route('paypal.cancel'),
             'invoice_id' => uniqid(),
             'invoice_description' => " Order description ",
@@ -40,20 +41,31 @@ class PayPalController extends Controller
 
         return $checkoutData;
     }
-    public function getExpressCheckoutSuccess(Request $request){
+    public function getExpressCheckoutSuccess(Request $request, $orderId){
         $token = $request->get('token');
         $payerId = $request->get('PayerID');
         $provider = new ExpressCheckout();
-        $checkoutData = $this->checkoutData();
+        $checkoutData = $this->checkoutData($orderId);
         $response = $provider->getExpressCheckoutDetails($token);
         if (in_array(strtoupper($response['ACK']), ['SUCCESS', 'SUCCESSWITHWARNING'])) {
 
             // Perform transaction on PayPal
             $payment_status = $provider->doExpressCheckoutPayment($checkoutData, $token, $payerId);
+
             $status = $payment_status['PAYMENTINFO_0_PAYMENTSTATUS'];
 
+            if (in_array($status, ['Completed', 'Processed'])) {
+                $order = Order::find($orderId);
+                $order->is_paid = 1;
+                $order->save();
+
+                \Cart::session(auth()->id())->clear()
+
+                return redirect()->route('home')->withMessage('Pembayaran Berhasil!');
+            }
+
         }
-        dd('pembayaran berhasil');
+        return redirect()->route('home')->withError('Anda Mengalami Kegagalan dalam Pembayaran ! Coba Lagi!');
     }
 
     public function cancelPage()

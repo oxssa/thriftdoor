@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container ">
-    <h2>Product</h2>
+    <h2>Produk</h2>
     <div class="row">
         @foreach ($allProducts as $product)
         <div class="col-4">
