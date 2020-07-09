@@ -1,5 +1,5 @@
 @component('mail::message')
-# Introduction
+# Permintaan aktivasi toko
 
 Tolong aktivasi toko. Berikut ini detail toko.
 
