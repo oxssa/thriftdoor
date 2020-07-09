@@ -1,29 +1,66 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Str;
-use TCG\Voyager\Models\Role;
-use TCG\Voyager\Models\User;
 
 class UsersTableSeeder extends Seeder
 {
+
     /**
-     * Auto generated seed file.
+     * Auto generated seed file
      *
      * @return void
      */
     public function run()
     {
-        if (User::count() == 0) {
-            $role = Role::where('name', 'admin')->firstOrFail();
+        
 
-            User::create([
-                'name'           => 'Admin',
-                'email'          => 'admin@admin.com',
-                'password'       => bcrypt('password'),
-                'remember_token' => Str::random(60),
-                'role_id'        => $role->id,
-            ]);
-        }
+        \DB::table('users')->delete();
+        
+        \DB::table('users')->insert(array (
+            0 => 
+            array (
+                'id' => 1,
+                'role_id' => 1,
+                'name' => 'admin',
+                'email' => 'admin@thriftdoor.com',
+                'avatar' => 'users/default.png',
+                'email_verified_at' => NULL,
+                'password' => '$2y$10$eprruQVniiCcxFe93PHQYe8nCOUw8vrmGDcbcOCuxe1sQIEyyGZhu',
+                'remember_token' => 'xIMgCiCamk5XixXn0iTfgZ1ehhfvL3I7sg63MINPhZLcvRbCzzqWHMgNMPy6',
+                'settings' => NULL,
+                'created_at' => '2020-07-06 03:41:29',
+                'updated_at' => '2020-07-09 01:55:21',
+            ),
+            1 => 
+            array (
+                'id' => 2,
+                'role_id' => NULL,
+                'name' => 'okssa',
+                'email' => 'okssa@thriftdoor.com',
+                'avatar' => 'users/default.png',
+                'email_verified_at' => NULL,
+                'password' => '$2y$10$6/N9pkNG8n6ulFUEEhUtV.bgncpT4WSg1lubWNVDF2tfH1QqVS4fO',
+                'remember_token' => NULL,
+                'settings' => NULL,
+                'created_at' => '2020-07-06 03:42:13',
+                'updated_at' => '2020-07-06 03:42:13',
+            ),
+            2 => 
+            array (
+                'id' => 3,
+                'role_id' => NULL,
+                'name' => 'ridone',
+                'email' => 'ridone@thriftdoor.com',
+                'avatar' => 'users/default.png',
+                'email_verified_at' => NULL,
+                'password' => '$2y$10$QBU8.YEXgy1Ny942mfNbkejBhEoi8rC2IcG49uK1lkgAWvyUOvbiq',
+                'remember_token' => NULL,
+                'settings' => NULL,
+                'created_at' => '2020-07-06 03:43:25',
+                'updated_at' => '2020-07-06 03:43:25',
+            ),
+        ));
+        
+        
     }
 }
