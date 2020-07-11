@@ -12,12 +12,12 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-
+        
 
         \DB::table('users')->delete();
-
+        
         \DB::table('users')->insert(array (
-            0 =>
+            0 => 
             array (
                 'id' => 1,
                 'role_id' => 1,
@@ -31,10 +31,10 @@ class UsersTableSeeder extends Seeder
                 'created_at' => '2020-07-06 03:41:29',
                 'updated_at' => '2020-07-09 01:55:21',
             ),
-            1 =>
+            1 => 
             array (
                 'id' => 2,
-                'role_id' => 2,
+                'role_id' => 3,
                 'name' => 'okssa',
                 'email' => 'okssa@thriftdoor.com',
                 'avatar' => 'users/default.png',
@@ -43,12 +43,12 @@ class UsersTableSeeder extends Seeder
                 'remember_token' => NULL,
                 'settings' => NULL,
                 'created_at' => '2020-07-06 03:42:13',
-                'updated_at' => '2020-07-06 03:42:13',
+                'updated_at' => '2020-07-09 13:15:33',
             ),
-            2 =>
+            2 => 
             array (
                 'id' => 3,
-                'role_id' => 2,
+                'role_id' => 3,
                 'name' => 'ridone',
                 'email' => 'ridone@thriftdoor.com',
                 'avatar' => 'users/default.png',
@@ -57,10 +57,38 @@ class UsersTableSeeder extends Seeder
                 'remember_token' => NULL,
                 'settings' => NULL,
                 'created_at' => '2020-07-06 03:43:25',
-                'updated_at' => '2020-07-06 03:43:25',
+                'updated_at' => '2020-07-09 10:51:53',
+            ),
+            3 => 
+            array (
+                'id' => 4,
+                'role_id' => 2,
+                'name' => 'fane',
+                'email' => 'fane@thriftdoor.com',
+                'avatar' => 'users/default.png',
+                'email_verified_at' => NULL,
+                'password' => '$2y$10$QBU8.YEXgy1Ny942mfNbkejBhEoi8rC2IcG49uK1lkgAWvyUOvbiq',
+                'remember_token' => NULL,
+                'settings' => NULL,
+                'created_at' => '2020-07-06 03:43:25',
+                'updated_at' => '2020-07-09 10:51:53',
+            ),
+            4 => 
+            array (
+                'id' => 5,
+                'role_id' => 2,
+                'name' => 'cusaro',
+                'email' => 'cusaro@thriftdoor.com',
+                'avatar' => 'users/default.png',
+                'email_verified_at' => NULL,
+                'password' => '$2y$10$QBU8.YEXgy1Ny942mfNbkejBhEoi8rC2IcG49uK1lkgAWvyUOvbiq',
+                'remember_token' => NULL,
+                'settings' => NULL,
+                'created_at' => '2020-07-06 03:43:25',
+                'updated_at' => '2020-07-09 10:51:53',
             ),
         ));
-
-
+        
+        
     }
 }
