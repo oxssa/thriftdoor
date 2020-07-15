@@ -1569,6 +1569,22 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{}',
                 'order' => 2,
             ),
+            97 => 
+            array (
+                'id' => 98,
+                'data_type_id' => 9,
+                'field' => 'product_belongstomany_category_relationship',
+                'type' => 'relationship',
+                'display_name' => 'categories',
+                'required' => 0,
+                'browse' => 1,
+                'read' => 1,
+                'edit' => 1,
+                'add' => 1,
+                'delete' => 1,
+                'details' => '{"model":"TCG\\\\Voyager\\\\Models\\\\Category","table":"categories","type":"belongsToMany","column":"id","key":"id","label":"name","pivot_table":"product_categories","pivot":"1","taggable":"on"}',
+                'order' => 9,
+            ),
         ));
         
         
