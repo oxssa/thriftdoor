@@ -1,9 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use Illuminate\Http\Request;
+use App\Coupon;
 use App\Product;
+use Cart;
+use Illuminate\Http\Request;
 
 class CartController extends Controller
 {
@@ -47,5 +48,28 @@ class CartController extends Controller
     public function checkout()
     {
         return view('cart.checkout');
+    }
+    public function applyCoupon()
+    {
+        $couponCode = request('coupon_code');
+        $couponData = Coupon::where('code', $couponCode)->first();
+        if(!$couponData) {
+            return back()->withMessage('Maaf, Kupon tidak dapat ditemukan');
+        }else{
+            // add single condition on a cart bases
+       //coupon logic
+        $condition = new \Darryldecode\Cart\CartCondition(array(
+            'name' => $couponData->name,
+            'type' => $couponData->type,
+            'target' => 'total',
+            'value' => $couponData->value,
+        ));
+
+        Cart::session(auth()->id())->condition($condition); // for a speicifc user's cart
+
+
+        return back()->withMessage('Kupon berhasil diterapkan');
+
+        }
     }
 }
