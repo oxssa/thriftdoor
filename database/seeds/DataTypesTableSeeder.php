@@ -179,6 +179,24 @@ class DataTypesTableSeeder extends Seeder
                 'created_at' => '2020-07-10 08:16:17',
                 'updated_at' => '2020-07-11 07:22:50',
             ),
+            9 => 
+            array (
+                'id' => 10,
+                'name' => 'coupons',
+                'slug' => 'coupons',
+                'display_name_singular' => 'Coupon',
+                'display_name_plural' => 'Coupons',
+                'icon' => 'voyager-scissors',
+                'model_name' => 'App\\Coupon',
+                'policy_name' => NULL,
+                'controller' => NULL,
+                'description' => NULL,
+                'generate_permissions' => 1,
+                'server_side' => 0,
+                'details' => '{"order_column":null,"order_display_column":null,"order_direction":"asc","default_search_key":null}',
+                'created_at' => '2020-07-16 09:20:54',
+                'updated_at' => '2020-07-16 09:20:54',
+            ),
         ));
         
         

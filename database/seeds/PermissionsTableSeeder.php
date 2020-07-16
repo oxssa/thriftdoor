@@ -465,6 +465,46 @@ class PermissionsTableSeeder extends Seeder
                 'created_at' => '2020-07-10 08:16:19',
                 'updated_at' => '2020-07-10 08:16:19',
             ),
+            56 => 
+            array (
+                'id' => 57,
+                'key' => 'browse_coupons',
+                'table_name' => 'coupons',
+                'created_at' => '2020-07-16 09:20:54',
+                'updated_at' => '2020-07-16 09:20:54',
+            ),
+            57 => 
+            array (
+                'id' => 58,
+                'key' => 'read_coupons',
+                'table_name' => 'coupons',
+                'created_at' => '2020-07-16 09:20:54',
+                'updated_at' => '2020-07-16 09:20:54',
+            ),
+            58 => 
+            array (
+                'id' => 59,
+                'key' => 'edit_coupons',
+                'table_name' => 'coupons',
+                'created_at' => '2020-07-16 09:20:54',
+                'updated_at' => '2020-07-16 09:20:54',
+            ),
+            59 => 
+            array (
+                'id' => 60,
+                'key' => 'add_coupons',
+                'table_name' => 'coupons',
+                'created_at' => '2020-07-16 09:20:54',
+                'updated_at' => '2020-07-16 09:20:54',
+            ),
+            60 => 
+            array (
+                'id' => 61,
+                'key' => 'delete_coupons',
+                'table_name' => 'coupons',
+                'created_at' => '2020-07-16 09:20:54',
+                'updated_at' => '2020-07-16 09:20:54',
+            ),
         ));
         
         
