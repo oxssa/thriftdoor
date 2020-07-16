@@ -197,7 +197,7 @@
     <div class="electro-product-wrapper wrapper-padding pt-95 pb-45">
         <div class="container-fluid">
                 <div class="section-title-4 text-center mb-40">
-                    <h2>Top Products</h2>
+                    <h2>Produk Pilihan</h2>
                 </div>
                 <div class="top-product-style">
 

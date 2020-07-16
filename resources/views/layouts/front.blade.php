@@ -76,24 +76,10 @@
                     </a>
                 </div>
                 <div class="categories-search-wrapper">
-                    <div class="all-categories">
-                        <div class="select-wrapper">
-                            <select class="select">
-                                <option value="">All Categories</option>
-                                <option value="">Smartphones </option>
-                                <option value="">Computers</option>
-                                <option value="">Laptops </option>
-                                <option value="">Camerea </option>
-                                <option value="">Watches</option>
-                                <option value="">Lights </option>
-                                <option value="">Air conditioner</option>
-                            </select>
-                        </div>
-                    </div>
                     <div class="categories-wrapper">
-                        <form action="#">
-                            <input placeholder="Enter Your key word" type="text">
-                            <button type="button"> Search </button>
+                    <form action="{{route('products.search')}}" method="GET">
+                            <input name="query" placeholder="Masukan kata kunci" type="text">
+                            <button type="submit"> Cari </button>
                         </form>
                     </div>
                 </div>
