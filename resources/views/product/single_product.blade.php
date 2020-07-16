@@ -3,7 +3,11 @@
     <div class="product-wrapper product-border mb-24">
         <div class="product-img-3">
             <a href="product-details.html">
-                <img src="/assets/img/product/electro/1.jpg" alt="">
+                @if(!empty($product->cover_img))
+                    <img src="{{asset('storage/'.$product->cover_img)}}" alt="">
+                @else
+                    <img src="/assets/img/product/electro/1.jpg" alt="">
+                @endif
             </a>
             <div class="product-action-right">
                  <a class="animate-right" href="#" data-target="#exampleModal" data-toggletitle="Quick View">
