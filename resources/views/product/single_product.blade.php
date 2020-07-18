@@ -10,7 +10,7 @@
                 @endif
             </a>
             <div class="product-action-right">
-                 <a class="animate-right" href="#" data-target="#exampleModal" data-toggletitle="Quick View">
+                 <a class="animate-right" href="{{ route('products.detail', [$product->id]) }}" data-target="#exampleModal" data-toggletitle="Quick View">
                      <i class="pe-7s-look"></i>
                  </a>
                  <a class="animate-top" title="Add To Cart" href="{{route('cart.add', $product->id)}}">

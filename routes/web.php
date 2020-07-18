@@ -21,6 +21,7 @@ Route::get('', 'HomeController@index')->name('home');
 
 Route::get('/products/search', 'ProductController@search')->name('products.search');
 Route::resource('products', 'ProductController');
+Route::get('/product/{id}', 'ProductController@detail')->name('products.detail');
 
 Route::get('/add-to-cart/{product}', 'CartController@add')->name('cart.add')->middleware('auth');
 Route::get('/cart', 'CartController@index')->name('cart.index')->middleware('auth');

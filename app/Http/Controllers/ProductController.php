@@ -32,4 +32,9 @@ class ProductController extends Controller
         $products = Product::where('name','LIKE',"%$query%")->paginate(10);
         return view('product.catalog',compact('products'));
     }
+
+    public function detail($id = null){
+        $product = Product::where('id',$id)->first();
+        return view('product.detail',compact('product'));
+    }
 }
