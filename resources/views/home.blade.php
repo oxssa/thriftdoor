@@ -55,16 +55,7 @@
             </div>
             <div class="menu-slider-wrapper">
                 <div class="menu-style-3 menu-hover text-center">
-                    <nav>
-                        <ul>
-                            <li><a href="{{route('home')}}">home <i class="pe-7s-angle-down"></i> <span class="sticker-new">hot</span></a>
 
-                            </li>
-                            <li><a href="#">blog <i class="pe-7s-angle-down"></i> <span class="sticker-new">hot</span></a>
-                            </li>
-                            <li><a href="#">Kontak</a></li>
-                        </ul>
-                    </nav>
                 </div>
                 <div class="slider-area">
                     <div class="slider-active owl-carousel">

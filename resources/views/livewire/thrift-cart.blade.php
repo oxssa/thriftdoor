@@ -25,7 +25,13 @@
                                         <tr>
                                             <td class="product-remove"><a href="{{route('cart.destroy', $item['id'])}}"><i class="pe-7s-close"></i></a></td>
                                             <td class="product-thumbnail">
-                                                <a href="#"><img src="assets/img/cart/1.jpg" alt=""></a>
+                                                <a href="#">
+                                                   @if(!empty($item['cover_img']))
+                                                        <img src="{{asset('storage/'.$item['cover_img'])}}" alt="">
+                                                    @else
+                                                        <img src="/assets/img/cart/1.jpg" alt="">
+                                                    @endif
+                                                </a>
                                             </td>
                                             <td class="product-name"><a href="#">{{$item['name']}}</a></td>
                                             <td class="product-price-cart"><span class="amount">Rp {{$item['price']}}</span></td>
