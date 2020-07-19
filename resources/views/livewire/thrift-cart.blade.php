@@ -14,7 +14,7 @@
                                     <thead>
                                         <tr>
                                             <th>hapus</th>
-                                            <th>gambar</th>
+                                            {{-- <th>gambar</th> --}}
                                             <th>Produk</th>
                                             <th>Harga</th>
                                             <th>Jumlah</th>
@@ -24,7 +24,7 @@
                                         @foreach ($cartItems as $item)
                                         <tr>
                                             <td class="product-remove"><a href="{{route('cart.destroy', $item['id'])}}"><i class="pe-7s-close"></i></a></td>
-                                            <td class="product-thumbnail">
+                                            {{-- <td class="product-thumbnail">
                                                 <a href="#">
                                                    @if(!empty($item['cover_img']))
                                                         <img src="{{asset('storage/'.$item['cover_img'])}}" alt="">
@@ -32,7 +32,7 @@
                                                         <img src="/assets/img/cart/1.jpg" alt="">
                                                     @endif
                                                 </a>
-                                            </td>
+                                            </td> --}}
                                             <td class="product-name"><a href="#">{{$item['name']}}</a></td>
                                             <td class="product-price-cart"><span class="amount">Rp {{$item['price']}}</span></td>
                                             <td class="product-quantity">

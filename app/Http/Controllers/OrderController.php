@@ -45,6 +45,7 @@ class OrderController extends Controller
             'shipping_phone' => 'required',
             'shipping_zipcode' => 'required',
             'payment_method' => 'required',
+            'shipping_method' => 'required',
         ]);
 
         $order = new Order();
@@ -81,6 +82,9 @@ class OrderController extends Controller
         $order->user_id = auth()->id();
         if (request('payment_method') == 'paypal') {
             $order->payment_method = 'paypal';
+        }
+        if (request('shipping_method') == 'jne') {
+            $order->shipping_method = 'jne';
         }
         $order->save();
 
