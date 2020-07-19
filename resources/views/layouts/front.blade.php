@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Electronics - eCommerce HTML5 Template</title>
+    <title>Thriftdoor - eCommerce Secondhand</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon -->
@@ -37,11 +37,11 @@
         <div class="container-fluid">
             <div class="notification-wrapper">
                 <div class="notification-pera-graph">
-                    <p>Get A big Discount for Gadgets. 10% to 70% Discount for all products. Save money</p>
+                    <p>Big Sale. Dpatkan diskon mulai dari 5% hingga 70%, untuk pembelian semua produk.</p>
                 </div>
                 <div class="notification-btn-close">
                     <div class="notification-btn">
-                        <a href="#">Shop Now</a>
+                        <a href="#">Belanja Sekarang</a>
                     </div>
                     <div class="notification-close notification-icon">
                         <button><i class="pe-7s-close"></i></button>
@@ -55,7 +55,7 @@
             <div class="header-info-wrapper pl-200 pr-200">
                 <div class="header-contact-info">
                     <ul>
-                        <li><i class="pe-7s-call"></i> +011 2231 4545</li>
+                        <li><i class="pe-7s-call"></i> 021 2231 4545</li>
                         <li><i class="pe-7s-mail"></i> <a href="#">company@thriftdoor.com</a></li>
                     </ul>
                 </div>
