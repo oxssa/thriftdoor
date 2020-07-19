@@ -61,6 +61,11 @@
                 </div>
                 <div class="electronics-login-register">
                     <ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('shops.create') }}">Buka toko
+                            </a>
+                        </li>
+                        </li>
                                 @guest
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
