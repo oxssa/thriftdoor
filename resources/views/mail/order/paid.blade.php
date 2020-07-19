@@ -18,7 +18,7 @@ Info Transaksi
         <tr>
             <td scope="row">{{ $item->name }}</td>
             <td>{{ $item->pivot->quantity }}</td>
-            <td>${{ $item->pivot->price }}</td>
+            <td>Rp{{ $item->pivot->price }}</td>
         </tr>
         @endforeach
     </tbody>
