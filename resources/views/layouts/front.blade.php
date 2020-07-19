@@ -55,7 +55,7 @@
                 <div class="header-contact-info">
                     <ul>
                         <li><i class="pe-7s-call"></i> +011 2231 4545</li>
-                        <li><i class="pe-7s-mail"></i> <a href="#">company@domail.info</a></li>
+                        <li><i class="pe-7s-mail"></i> <a href="#">company@thriftdoor.com</a></li>
                     </ul>
                 </div>
                 <div class="electronics-login-register">
