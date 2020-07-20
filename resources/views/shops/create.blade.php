@@ -1,6 +1,8 @@
-@extends('layouts.app')
+@extends('layouts.front')
 
 @section('content')
+<br><br>
+<div class="container">
 <h2>Buat Toko</h2>
 
 <form action="{{route('shops.store')}}" method="post">
@@ -15,4 +17,6 @@
     </div>
     <button type="submit"class="btn btn-primary">Submit</button>
 </form>
+</div>
+<br><br><br><br>
 @endsection

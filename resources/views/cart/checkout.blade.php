@@ -1,11 +1,10 @@
-@extends('layouts.app')
+@extends('layouts.front')
 
 @section('content')
+<br><br>
+<div class="container">
     <h2>Checkout</h2>
-
-    <h3>Pengiriman</h3>
-
-
+<br><br>
 <form action="{{route('orders.store')}}" method="post">
     @csrf
 
@@ -40,7 +39,7 @@
         <input type="number" name="shipping_zipcode" id="" class="form-control">
     </div>
 
-
+<br><br>
     <h2>Pembayaran</h2>
 
     <div class="form-check">
@@ -60,7 +59,7 @@
         </label>
 
     </div>
-
+<br><br>
     <h2>Pengiriman</h2>
     <div class="form-check">
         <label class="form-check-label">
@@ -79,10 +78,11 @@
         </label>
 
     </div>
-
-    <button type="submit" class="btn btn-danger mt-4 btn-lg">Order</button>
+<br><br>
+    <button type="submit" class="btn btn-primary">Order</button>
 
 
 </form>
-
+</div>
+<br><br>
 @endsection

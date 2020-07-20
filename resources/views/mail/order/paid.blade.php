@@ -24,7 +24,7 @@ Info Transaksi
     </tbody>
 </table>
 
-Total : ${{$order->grand_total}}
+Total : Rp{{$order->grand_total}}
 
 @component('mail::button', ['url' => ''])
 Lihat
