@@ -102,7 +102,7 @@
             <div class="header-bottom-wrapper pr-200 pl-200">
                 <div class="logo-3">
                     <a href="{{route('home')}}">
-                        <img src="/assets/img/logo/logo-3.png" alt="">
+                        <img src="/assets/img/logo/logo1.png" alt="" width="225" height="38">
                     </a>
                 </div>
                 <div class="categories-search-wrapper">
@@ -238,7 +238,7 @@
                         <div class="copyright f-right mrg-5">
                             <p>
                                 Copyright ©
-                                <a href="https://hastech.company/">Thriftdoor</a> 2020 . All Right Reserved.
+                                <a href="#">Thriftdoor</a> 2020 . All Right Reserved.
                             </p>
                         </div>
                     </div>
