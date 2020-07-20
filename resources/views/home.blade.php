@@ -70,7 +70,7 @@
                             <div class="slider-animation slider-content-style-3 fadeinup-animated">
                                 <h2 class="animated">Invention of <br>design platform</h2>
                                 <h4 class="animated">Best Product With warranty </h4>
-                                <a class="electro-slider-btn btn-hover" href="product-details.html">buy now</a>
+                                <a class="electro-slider-btn btn-hover" href="product-details.html">Beli<Sekarang/a>
                             </div>
                         </div> --}}
                     </div>
@@ -87,8 +87,8 @@
                     <div class="electro-banner-style electro-banner-position">
                         <h1 style="color:aliceblue;">>Live 4K! </h1>
                         <h2 style="color:aliceblue;">up to 20% off</h2>
-                        <h4 style="color:aliceblue;">Amazon exclusives</h4>
-                        <a style="color:aliceblue;" href="product-details.html">Buy Now→</a>
+                        <h4 style="color:aliceblue;">Samsung exclusives</h4>
+                        <a style="color:aliceblue;" href="product-details.html">Beli Sekarang→</a>
                     </div>
                 </div>
             </div>
@@ -96,10 +96,10 @@
                 <div class="electronic-banner-wrapper">
                      <img src="assets/img/banner/snap.jpg" alt="" width="490" height="270">
                     <div class="electro-banner-style electro-banner-position">
-                        <h1 style="color:aliceblue;">>Live 4K! </h1>
-                        <h2 style="color:aliceblue;">up to 20% off</h2>
-                        <h4 style="color:aliceblue;">Amazon exclusives</h4>
-                        <a style="color:aliceblue;" href="product-details.html">Buy Now→</a>
+                        <h1 style="color:aliceblue;">>Sneakers </h1>
+                        <h2 style="color:aliceblue;">up to 30% off</h2>
+                        <h4 style="color:aliceblue;">Nike exclusives</h4>
+                        <a style="color:aliceblue;" href="product-details.html">Beli Sekarang→</a>
                     </div>
                 </div>
             </div>
@@ -107,10 +107,10 @@
                 <div class="electronic-banner-wrapper">
                    <img src="assets/img/banner/interior.jpg" alt="" width="490" height="270">
                     <div class="electro-banner-style electro-banner-position">
-                        <h1 style="color:aliceblue;">>Live 4K! </h1>
-                        <h2 style="color:aliceblue;">up to 20% off</h2>
-                        <h4 style="color:aliceblue;">Amazon exclusives</h4>
-                        <a style="color:aliceblue;" href="product-details.html">Buy Now→</a>
+                        <h1 style="color:aliceblue;">>Furniture </h1>
+                        <h2 style="color:aliceblue;">up to 25% off</h2>
+                        <h4 style="color:aliceblue;">Ikea exclusives</h4>
+                        <a style="color:aliceblue;" href="product-details.html">Beli Sekarang→</a>
                     </div>
                 </div>
             </div>
