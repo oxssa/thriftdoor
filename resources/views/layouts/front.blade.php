@@ -102,7 +102,7 @@
             <div class="header-bottom-wrapper pr-200 pl-200">
                 <div class="logo-3">
                     <a href="{{route('home')}}">
-                        <img src="/assets/img/logo/logo1.png" alt="" width="225" height="38">
+                        <img src="/assets/img/logo/logo1.png" alt="" width="240" height="50">
                     </a>
                 </div>
                 <div class="categories-search-wrapper">
@@ -114,14 +114,6 @@
                     </div>
                 </div>
                 <div class="trace-cart-wrapper">
-                    {{-- <div class="trace same-style">
-                        <div class="same-style-icon">
-                            <a href="#"><i class="pe-7s-plane"></i></a>
-                        </div>
-                        <div class="same-style-text">
-                            <a href="#">Product <br>trace</a>
-                        </div>
-                    </div> --}}
                     <div class="categories-cart same-style">
                         <div class="same-style-icon">
                             <a href="#"><i class="pe-7s-cart"></i></a>
