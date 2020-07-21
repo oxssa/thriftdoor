@@ -83,7 +83,7 @@
         <div class="custom-row-2">
             <div class="custom-col-style-2 electronic-banner-col-3 mb-30">
                 <div class="electronic-banner-wrapper">
-                    <img src="assets/img/banner/alienware.jpg" alt="" width="490" height="270">
+                    <img src="{{ asset('assets/img/banner/alienware.jpg')}}" alt="" width="490" height="270">
                     <div class="electro-banner-style electro-banner-position">
                         <h1 style="color:aliceblue;">>Live 4K! </h1>
                         <h2 style="color:aliceblue;">up to 20% off</h2>
@@ -94,7 +94,7 @@
             </div>
             <div class="custom-col-style-2 electronic-banner-col-3 mb-30">
                 <div class="electronic-banner-wrapper">
-                     <img src="assets/img/banner/snap.jpg" alt="" width="490" height="270">
+                     <img src="{{ asset('assets/img/banner/snap.jpg')}}" alt="" width="490" height="270">
                     <div class="electro-banner-style electro-banner-position">
                         <h1 style="color:aliceblue;">>Sneakers </h1>
                         <h2 style="color:aliceblue;">up to 30% off</h2>
@@ -105,7 +105,7 @@
             </div>
             <div class="custom-col-style-2 electronic-banner-col-3 mb-30">
                 <div class="electronic-banner-wrapper">
-                   <img src="assets/img/banner/interior.jpg" alt="" width="490" height="270">
+                   <img src="{{ asset('assets/img/banner/interior.jpg')}}" alt="" width="490" height="270">
                     <div class="electro-banner-style electro-banner-position">
                         <h1 style="color:aliceblue;">>Furniture </h1>
                         <h2 style="color:aliceblue;">up to 25% off</h2>
