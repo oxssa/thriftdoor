@@ -88,7 +88,7 @@
                         <h1 style="color:aliceblue;">>Live 4K! </h1>
                         <h2 style="color:aliceblue;">up to 20% off</h2>
                         <h4 style="color:aliceblue;">Samsung Exclusives</h4>
-                        <a style="color:aliceblue;" href="product-details.html">Beli Sekarang→</a>
+                        <a style="color:aliceblue;" href="#">Beli Sekarang→</a>
                     </div>
                 </div>
             </div>
@@ -99,7 +99,7 @@
                         <h1 style="color:aliceblue;">>Sneakers </h1>
                         <h2 style="color:aliceblue;">up to 30% off</h2>
                         <h4 style="color:aliceblue;">Nike Exclusives</h4>
-                        <a style="color:aliceblue;" href="product-details.html">Beli Sekarang→</a>
+                        <a style="color:aliceblue;" href="#">Beli Sekarang→</a>
                     </div>
                 </div>
             </div>
@@ -110,7 +110,7 @@
                         <h1 style="color:aliceblue;">>Furniture </h1>
                         <h2 style="color:aliceblue;">up to 25% off</h2>
                         <h4 style="color:aliceblue;">IKEA Exclusives</h4>
-                        <a style="color:aliceblue;" href="product-details.html">Beli Sekarang→</a>
+                        <a style="color:aliceblue;" href="#">Beli Sekarang→</a>
                     </div>
                 </div>
             </div>
