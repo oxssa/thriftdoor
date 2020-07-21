@@ -220,7 +220,7 @@
                             <nav>
                                 <ul>
                                     <li><a href="#">Privacy Policy </a></li>
-                                    <li><a href="blog.html"> Blog</a></li>
+                                    <li><a href="#"> Blog</a></li>
                                     <li><a href="#">Help Center</a></li>
                                 </ul>
                             </nav>
