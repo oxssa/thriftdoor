@@ -40,7 +40,7 @@
         <div class="container-fluid">
             <div class="notification-wrapper">
                 <div class="notification-pera-graph">
-                    <p>Big Sale. Dpatkan diskon mulai dari 5% hingga 70%, untuk pembelian semua produk.</p>
+                    <p>Big Sale. Dapatkan diskon mulai dari 5% hingga 70%, untuk pembelian semua produk.</p>
                 </div>
                 <div class="notification-btn-close">
                     <div class="notification-btn">
@@ -137,19 +137,9 @@
                     <div class="mobile-menu">
                         <nav id="mobile-menu-active">
                             <ul class="menu-overflow">
-                                <li><a href="{{route('home')}}">HOME</a>
+                                <li><a href="{{route('home')}}">Beranda</a>
 
                                 </li>
-                                <li><a href="#">BLOG</a>
-                                    <ul>
-                                        <li><a href="blog.html">blog 3 colunm</a></li>
-                                        <li><a href="blog-2-col.html">blog 2 colunm</a></li>
-                                        <li><a href="blog-sidebar.html">blog sidebar</a></li>
-                                        <li><a href="blog-details.html">blog details</a></li>
-                                        <li><a href="blog-details-sidebar.html">blog details 2</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#"> Kontak  </a></li>
                             </ul>
                         </nav>
                     </div>
