@@ -50,23 +50,6 @@
         </select>
     </label>
  </div>
-    {{-- <div class="form-check">
-        <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="payment_method" id="" value="cash_on_delivery">
-            COD
-
-        </label>
-
-    </div>
-
-    <div class="form-check">
-        <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="payment_method" id="" value="paypal">
-            Paypal
-
-        </label>
-
-    </div> --}}
 <br><br>
     <h2>Pengiriman</h2>
 <div class="form-group">
@@ -78,23 +61,6 @@
     </label>
 </div>
 
-    {{-- <div class="form-check">
-        <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="shipping_method" id="" value="gosend">
-            Gosend
-
-        </label>
-
-    </div>
-
-    <div class="form-check">
-        <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="shipping_method" id="" value="jne">
-            JNE
-
-        </label>
-
-    </div> --}}
 <br><br>
     <button type="submit" class="btn btn-dark">Order</button>
 

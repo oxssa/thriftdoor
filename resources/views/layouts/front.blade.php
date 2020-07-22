@@ -43,9 +43,6 @@
                     <p>Big Sale. Dapatkan diskon mulai dari 5% hingga 70%, untuk pembelian semua produk.</p>
                 </div>
                 <div class="notification-btn-close">
-                    <div class="notification-btn">
-                        <a href="#">Belanja Sekarang</a>
-                    </div>
                     <div class="notification-close notification-icon">
                         <button><i class="pe-7s-close"></i></button>
                     </div>
