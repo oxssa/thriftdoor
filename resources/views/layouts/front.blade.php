@@ -10,6 +10,9 @@
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.png">
 
+    {{-- Font --}}
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
     <!-- all css here -->
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/magnific-popup.css') }}>
@@ -102,7 +105,8 @@
             <div class="header-bottom-wrapper pr-200 pl-200">
                 <div class="logo-3">
                     <a href="{{route('home')}}">
-                        <img src="{{ asset('assets/img/logo/logo1.png') }}" alt="">
+                        {{-- <img src="{{ asset('assets/img/logo/logo1.png') }}" alt=""> --}}
+                        <h1 class="logom">Thriftdoor</h1>
                     </a>
                 </div>
                 <div class="categories-search-wrapper">
