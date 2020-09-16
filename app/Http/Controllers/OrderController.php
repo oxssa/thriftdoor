@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Order;
 use App\Mail\OrderPaid;
+use App\Mail\OrderNotPaid;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
@@ -96,12 +97,14 @@ class OrderController extends Controller
 
         //Payment
         if (request('payment_method') == 'paypal') {
+            Mail::to($order->user->email)->send(new OrderNotPaid($order));
             return redirect()->route('paypal.checkout', $order->id);
         }
 
         //empty cart
         \Cart::session(auth()->id())->clear();
         //send mail
+        Mail::to($order->user->email)->send(new OrderNotPaid($order));
         Mail::to($order->user->email)->send(new OrderPaid($order));
         return redirect()->route('home')->withMessage('Pembelian Berhasil!');
     }
